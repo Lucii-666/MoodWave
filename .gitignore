@@ -1,0 +1,18 @@
+# Environment
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Node
+node_modules/
+.vite/
+
+# Large dataset (not needed for deployment — embeddings are pre-built)
+*.csv
+
+# Misc
+pdf_content.txt
+*.log

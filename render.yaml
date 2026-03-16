@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: moodwave
+    runtime: docker
+    plan: free
+    envVars:
+      - key: HMAS_DATASET_PATH
+        value: data/MD-1M.csv
+      - key: HMAS_FAISS_INDEX_PATH
+        value: data/faiss_index.bin
+      - key: HMAS_ARTIST_PROFILES_PATH
+        value: data/artist_profiles.pkl
+      - key: HMAS_EMBEDDING_MODEL_NAME
+        value: all-MiniLM-L6-v2
+      - key: HMAS_TINYFISH_API_KEY
+        sync: false
